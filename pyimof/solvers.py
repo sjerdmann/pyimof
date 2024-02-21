@@ -74,7 +74,7 @@ def _tvl1(I0, I1, u0, v0, dt, lambda_, tau, nwarp, niter, tol, prefilter):
             u = ndi.filters.median_filter(u, 3)
             v = ndi.filters.median_filter(v, 3)
 
-        wI1 = warp(I1, np.array([y+v, x+u]), mode='nearest')
+        wI1 = warp(I1, np.array([y+v, x+u]), mode='edge')
         Iy, Ix = np.gradient(wI1)
         NI = Ix*Ix + Iy*Iy
         NI[NI == 0] = 1
