@@ -9,7 +9,7 @@ from skimage.transform import pyramid_reduce, resize
 
 
 def tv_regularize(x, tau=0.3, dt=0.2, max_iter=100, p=None, g=None):
-    """Toltal variation regularization using Chambolle algorithm [1]_.
+    """Total variation regularization using Chambolle algorithm [1]_.
 
     Parameters
     ----------

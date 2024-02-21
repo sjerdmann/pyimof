@@ -18,7 +18,7 @@ pip install pyimof
 
 ## Quick Example
 
-Using Pyimov is as easy as
+Using Pyimof is as easy as
 
 ```python
 from matplotlib import pyplot as plt

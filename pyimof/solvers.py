@@ -118,7 +118,7 @@ def _tvl1(I0, I1, u0, v0, dt, lambda_, tau, nwarp, niter, tol, prefilter):
 def tvl1(I0, I1, dt=0.2, lambda_=15, tau=0.3, nwarp=5, niter=10,
          tol=1e-4, prefilter=False):
     """Coarse to fine TV-L1 optical flow estimator. A popular algorithm
-    intrudced by Zack et al. [1]_, improved in [2]_ and detailed in [3]_.
+    introduced by Zack et al. [1]_, improved in [2]_ and detailed in [3]_.
 
     Parameters
     ----------
